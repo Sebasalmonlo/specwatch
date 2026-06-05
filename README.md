@@ -34,7 +34,7 @@ That creates real risk:
 
 Specwatch gives QA teams and engineering teams a fast way to verify that the live API still matches the documented contract.
 
-## CTO / Founder Use Case
+Use Case
 
 If you have a production software product, Specwatch acts as a lightweight API contract check.
 
@@ -123,8 +123,6 @@ Endpoint                  Method   Status   Schema   Violations
 
 8 endpoints checked • 6 drifted • 2 compliant
 ```
-
-## Why This Belongs In A QA Portfolio
 
 Specwatch shows practical API testing skills beyond clicking through a UI.
 
