@@ -34,7 +34,7 @@ That creates real risk:
 
 Specwatch gives QA teams and engineering teams a fast way to verify that the live API still matches the documented contract.
 
-Use Case
+## Use Case
 
 If you have a production software product, Specwatch acts as a lightweight API contract check.
 
@@ -96,6 +96,12 @@ npx tsx src/cli/index.ts run \
   --base-url https://petstore3.swagger.io/api/v3
 ```
 
+Or run the built-in demo command:
+
+```bash
+npm run demo
+```
+
 Run in strict mode to exit with code `1` if any drift is found:
 
 ```bash
@@ -123,6 +129,38 @@ Endpoint                  Method   Status   Schema   Violations
 
 8 endpoints checked • 6 drifted • 2 compliant
 ```
+
+## Project Structure
+
+```text
+specwatch/
+├── src/
+│   ├── cli/
+│   │   ├── commands/
+│   │   │   └── run.ts
+│   │   └── index.ts
+│   ├── core/
+│   │   ├── parser.ts
+│   │   ├── requester.ts
+│   │   └── validator.ts
+│   ├── output/
+│   │   └── table.ts
+│   └── types/
+│       └── index.ts
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+## Project Commands
+
+```bash
+npm run demo
+npm run typecheck
+npm test
+```
+
+## Why This Belongs In A QA Portfolio
 
 Specwatch shows practical API testing skills beyond clicking through a UI.
 

@@ -4,7 +4,10 @@
   "description": "Specwatch",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "demo": "tsx src/cli/index.ts run --spec https://petstore3.swagger.io/api/v3/openapi.json --base-url https://petstore3.swagger.io/api/v3",
+    "dev": "tsx src/cli/index.ts",
+    "test": "npm run typecheck",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
